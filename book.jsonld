@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "author": {
+      "@type": "@id"
+    },
+    "rating": "aggregateRating",
+    "reviewer": "author",
+    "publicationDate": "datePublished"
+  },
+  "@type": "Book",
+  "@id": "https://example.org/books/123",
+  "name": "The Art of Data",
+  "author": "https://example.org/authors/jane-doe",
+  "datePublished": "2024-01-15",
+  "genre": ["Technology", "Data Science"],
+  "isbn": "978-3-16-148410-0",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 12
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": "https://example.org/reviewers/john-smith",
+      "reviewBody": "A fascinating deep dive into data-driven decisions.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 5
+      },
+      "datePublished": "2024-02-01"
+    },
+    {
+      "@type": "Review",
+      "author": "https://example.org/reviewers/susan-lee",
+      "reviewBody": "Informative, but some concepts are overly complex.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 4
+      },
+      "datePublished": "2024-02-10"
+    }
+  ]
+}
