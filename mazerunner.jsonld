@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/"
+  },
+  "@type": "Book",
+  "@id": "https://example.org/books/the-maze-runner",
+  "name": "The Maze Runner",
+  "author": "https://example.org/authors/james-dashner",
+  "datePublished": "2009-10-06",
+  "genre": ["Science Fiction", "Young Adult", "Dystopian"],
+  "isbn": "978-0-375-89049-6",
+  "numberOfPages": 374,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.1,
+    "reviewCount": 1250
+  }
+}
