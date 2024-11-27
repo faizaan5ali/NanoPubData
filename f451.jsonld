@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/"
+  },
+  "@type": "Book",
+  "@id": "https://example.org/books/fahrenheit-451",
+  "name": "Fahrenheit 451",
+  "author": "https://example.org/authors/ray-bradbury",
+  "datePublished": "1953-10-19",
+  "genre": ["Science Fiction", "Dystopian"],
+  "isbn": "978-0-7432-4722-1",
+  "numberOfPages": 249,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.4,
+    "reviewCount": 1900
+  }
+}
