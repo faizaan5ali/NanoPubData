@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/"
+  },
+  "@type": "Book",
+  "@id": "https://example.org/books/blade-runner",
+  "name": "Blade Runner",
+  "author": "https://example.org/authors/philip-k-dick",
+  "datePublished": "1968-03-01",
+  "genre": ["Science Fiction", "Dystopian"],
+  "isbn": "978-0-345-40447-3",
+  "numberOfPages": 210,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.7,
+    "reviewCount": 820
+  }
+}
