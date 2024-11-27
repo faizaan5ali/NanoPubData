@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/"
+  },
+  "@type": "Book",
+  "@id": "https://example.org/books/the-hunger-games",
+  "name": "The Hunger Games",
+  "author": "https://example.org/authors/suzanne-collins",
+  "datePublished": "2008-09-14",
+  "genre": ["Science Fiction", "Young Adult", "Dystopian"],
+  "isbn": "978-0-439-02348-1",
+  "numberOfPages": 374,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.5,
+    "reviewCount": 2500
+  }
+}
