@@ -1,0 +1,47 @@
+@prefix this: <https://w3id.org/np/RAODrYRV1ZCo-sxct9JH9v44jMkCYteKw_LwFaEzQTJJY> .
+@prefix sub: <https://w3id.org/np/RAODrYRV1ZCo-sxct9JH9v44jMkCYteKw_LwFaEzQTJJY#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix nt: <https://w3id.org/np/o/ntemplate/> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+sub:Head {
+  this: np:hasAssertion sub:assertion;
+    np:hasProvenance sub:provenance;
+    np:hasPublicationInfo sub:pubinfo;
+    a np:Nanopublication .
+}
+
+sub:assertion {
+  <https://github.com/faizaan5ali/NanoPubData/tree/main> dct:title "BookData" .
+}
+
+sub:provenance {
+  sub:assertion prov:wasAttributedTo orcid:0009-0001-2187-6728 .
+}
+
+sub:pubinfo {
+  orcid:0009-0001-2187-6728 foaf:name "Faizaan Ali" .
+  
+  sub:sig npx:hasAlgorithm "RSA";
+    npx:hasPublicKey "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZVE+cVah12RyTPHNI6w2Py4wFZYeu8/cwuIR7D6B40NTPuBFW2ncmBQvn1zO7+6EP00o0R2CiMhEbN1hH2C8X7ITaSdeF8hBEt/6eYfGK+fERlfdOSMXnRIytYOtu6NuNyVDby227VF/U1SuYzNYOW9A3lUGTFpIqVrkTdszlqwIDAQAB";
+    npx:hasSignature "maTQYzlNQv+zeH631kOKa0WfkjoezQGmBhc2iemb01xsUqp2JVHH0Au313AdDTGqibem6gqHFw+NpKYLqc4s5JoH22YKIuUZcipiTiJyA0Er43Ns9xvQfyZWyE7M93laB/blVp+W55uvHjs6QmE43GnF+8Qjc1Jx7GR2KfHLmt0=";
+    npx:hasSignatureTarget this:;
+    npx:signedBy orcid:0009-0001-2187-6728 .
+  
+  this: dct:created "2024-11-27T04:04:44.095Z"^^xsd:dateTime;
+    dct:creator orcid:0009-0001-2187-6728;
+    dct:license <https://creativecommons.org/licenses/by/4.0/>;
+    npx:hasNanopubType <https://w3id.org/np/RAiJdS6J2YRykWomd5Pw5N0_uugMxVDGDIXCVUthS8lLk#sharing-web-links>;
+    npx:wasCreatedAt <https://nanodash.petapico.org/>;
+    rdfs:label "\"BookData\"";
+    nt:wasCreatedFromProvenanceTemplate <https://w3id.org/np/RA7lSq6MuK_TIC6JMSHvLtee3lpLoZDOqLJCLXevnrPoU>;
+    nt:wasCreatedFromPubinfoTemplate <https://w3id.org/np/RA0J4vUn_dekg-U1kK3AOEt02p9mT2WO03uGxLDec1jLw>,
+      <https://w3id.org/np/RAukAcWHRDlkqxk7H2XNSegc1WnHI569INvNr-xdptDGI>;
+    nt:wasCreatedFromTemplate <https://w3id.org/np/RAKMzFc-2RgvSyrJy0BHfTFx0bEK5yENbnjJ5ElX9WSvc> .
+}
