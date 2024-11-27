@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/"
+  },
+  "@type": "Book",
+  "@id": "https://example.org/books/mutiny-in-the-time-machine",
+  "name": "Mutiny in the Time Machine",
+  "author": "https://example.org/authors/donald-keith",
+  "datePublished": "1963-01-01",
+  "genre": ["Science Fiction", "Adventure"],
+  "isbn": "Unavailable",
+  "numberOfPages": 160,
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": 4.2,
+    "reviewCount": 54
+  }
+}
